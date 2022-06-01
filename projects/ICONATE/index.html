@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" /> 
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<title>ICONATE: Automatic Compound Icon Generation and Ideation</title> 
+
+<body> 
+  
+<div id = "head" align="center" style="font-family: Arial, Helvetica, sans-serif;">
+<h1 style = "align:center;  font-size: 180%; margin: 40px 0px 20px 0px;">ICONATE: Automatic Compound Icon Generation and Ideation</h1>
+
+<b>ACM Conference on Human Factors in Computing Systems(CHI), 2020</b>
+<br>
+<br>
+<br>
+<table>
+<tr>
+<td colspan="5" id="authors">
+<a href="http://nxzhao.com/">Nanxuan Zhao<sup>1,2</sup></a> &nbsp;&nbsp;&nbsp;
+<a href="https://www.namwkim.org/">Nam Wook Kim<sup>3</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="http://www.lauramherman.work/">Laura Mariah Herman<sup>4</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="https://vcg.seas.harvard.edu/people/hanspeter-pfister">Hanspeter Pfister<sup>1</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.cityu.edu.hk/~rynson/">Rynson W.H. Lau<sup>2</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="http://www.jiechevarria.com/">Jose Echevarria<sup>5</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="http://web.mit.edu/zoya/www/">Zoya Bylinskii<sup>5</sup></a></li> &nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="5" id="affiliation">
+<span class="super"><sup>1</sup>Harvard University&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>2</sup>City University of Hong Kong&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>3</sup>Boston College&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>4</sup>Adobe Inc.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>5</sup>Adobe Research
+</td>
+</tr>
+</table>
+
+
+<a href="img/iconate.png"><img src="img/iconate.png" alt="Teaser" id="teaser" width = "70%" style = "margin-top: 20px;"></a>
+</div>
+
+
+<table id="navigation"  align="center" style="align:center;font-size: 120%;font-family: Arial, Helvetica, sans-serif;">
+<tr>
+<!--td><a href="#news">News</a></td-->
+<td><a href="#abstract">Abstract</a></td>
+<td><a href="#downloads">Downloads</a></td>
+<td><a href="#softwares">Softwares</a></td>
+<td><a href="#video">Videos</a></td>
+<td><a href="#bibtex">Bibtex</a></td>
+<td><a href="#acks">Acknowledgements</a></td>
+<!--td><a href="#links">Links</a></td-->
+</tr>
+</table>
+</div>
+
+<div id="content">
+
+<h2><a id="abstract" href="#top">Abstract</a></h2>
+<p id="abssec">
+  Compound icons are prevalent on signs, webpages, and infographics, effectively conveying complex and abstract concepts, such as "no smoking" and "health insurance", with simple graphical representations. However, designing such icons requires experience and creativity, in order to efficiently navigate the semantics, space, and style features of icons. In this paper, we aim to automate the process of generating icons given compound concepts, to facilitate rapid compound icon creation and ideation. Informed by ethnographic interviews with professional icon designers, we have developed ICONATE, a novel system that automatically generates compound icons based on textual queries and allows users to explore and customize the generated icons. At the core of ICONATE is a computational pipeline that automatically finds commonly used icons for sub-concepts and arranges them according to inferred conventions. To enable the pipeline, we collected a new dataset, <em>Compicon1k</em>, consisting of 1000 compound icons annotated with semantic labels (i.e., concepts). Through user studies, we have demonstrated that our tool is able to automate or accelerate the compound icon design process for both novices and professionals.
+</p>
+
+
+<h2><a id="downloads" href="#top">Downloads</a></h2>
+<ul>
+<li><a href="CHI2020_ICONATE.pdf" target="_blank">Paper [pdf, 2.5M]</a></li>
+<li><a href="CHI2020_ICONATE_Appendix.pdf" target="_blank">Supplemental document [pdf, 0.5M]</a></li>
+<li><a href="IconVoc152.zip" target="_blank">IconVoc152 [zip, 11K]</a></li>
+<li><a href="Compicon1k.zip" target="_blank">Compicon1k [zip, 4.2M]</a></li>
+</ul>
+
+
+<h2><a id="softwares" href="#top">Softwares</a></h2>
+<ul>	
+<li><a href="https://iconnotate.namwkim.org/" target="_blank">Icon Annotation Tool</a></li>
+<li><a href="https://iconate.namwkim.org/" target="_blank">ICONATE</a></li>
+</ul>
+
+
+<h2><a href="#top">DEMO Video</a></h2>
+<video id="video" width="70%" controls align="center">
+<source src="CHI2020_ICONATE.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<h2><a href="#top">Presentation Video </a> <a href="https://www.youtube.com/watch?v=S3UntFFp7Nw">[Link]</a> </h2>
+
+
+<h2><a id="bibtex" href="#top">Bibtex</a></h2>
+<div id="bibtexsec">
+@article{ZhaoCHI2020, 
+    author = {Nanxuan Zhao and Nam Wook Kim and Laura Mariah Herman and Hanspeter Pfister and Rynson W.H. Lau and Jose Echevarria and Zoya Bylinskii}, 
+    title = {ICONATE: Automatic Compound Icon Generation and Ideation}, 
+    booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems}, 
+    year = {2020} 
+}
+</div>
+
+
+<h2><a id="acks" href="#top">Acknowledgements</a></h2>
+<p id="ackssec">
+We thank Spandan Madan for some of the initial inspiration for this project, Anelise Newman for some helpful discussions, and anonymous reviewers for their insightful comments. 
+</p>
+</div>
+
+  
+</body></html> 
+ 

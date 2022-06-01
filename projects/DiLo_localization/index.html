@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" /> 
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<title>Distilling Localization for Self-Supervised Representation Learning</title> 
+
+<body> 
+  
+<div id = "head" align="center" style="font-family: Arial, Helvetica, sans-serif;">
+<h1 style = "align:center;  font-size: 180%; margin: 40px 0px 20px 0px;">Distilling Localization for Self-Supervised Representation Learning</h1>
+
+<b>AAAI Conference on Artificial Intelligence (AAAI), 2021</b>
+<br>
+<br>
+<br>
+<table>
+<tr>
+<td colspan="5" id="authors">
+<a href="http://nxzhao.com/">Nanxuan Zhao<sup>1*</sup></a> &nbsp;&nbsp;&nbsp;
+<a href="https://www.microsoft.com/en-us/research/people/wuzhiron/">Zhirong Wu<sup>2*</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.cityu.edu.hk/~rynson/">Rynson W.H. Lau<sup>1</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="https://www.microsoft.com/en-us/research/people/stevelin/">Stephen Lin<sup>2</sup></a></li> &nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="5" id="affiliation">
+<span class="super"><sup>1</sup>City University of Hong Kong&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>2</sup>Microsoft Research Asia
+</td>
+</tr>
+</table>
+
+
+<a href="img/finding.pdf"><img src="img/finding.pdf" alt="Teaser" id="teaser" width = "70%" style = "margin-top: 20px;"></a>
+</div>
+
+
+<table id="navigation"  align="center" style="align:center;font-size: 120%;font-family: Arial, Helvetica, sans-serif;">
+<tr>
+<!--td><a href="#news">News</a></td-->
+<td><a href="#abstract">Abstract</a></td>
+<td><a href="#paper">Downloads</a></td>
+<td><a href="#bibtex">Bibtex</a></td>
+<!--td><a href="#links">Links</a></td-->
+</tr>
+</table>
+</div>
+
+<div id="content">
+
+<h2><a id="abstract" href="#top">Abstract</a></h2>
+<p id="abssec">
+Recent progress in contrastive learning has revolutionized unsupervised representation learning. Concretely, multipleviews (augmentations) from the same image are encouraged to map to the similar embeddings, while views from different images are pulled apart. In this paper, through visualizing and diagnosing classification errors, we observe that current contrastive models are ineffective at localizing the foreground object, limiting their ability to extract discriminative high-level features.  This is due to the fact that view generation process considers pixels in an image uniformly. To address this problem, we propose a data-driven approach for learning invariance to backgrounds. It first estimates foreground saliency in images and then creates augmentations by copy-and-pasting the foreground onto a variety of backgrounds. The learning still follows the instance discrimination pretext task, so that the representation is trained to disregard background content and focus on the foreground. We study a variety of saliency estimation methods, and find that most methods lead to improvements for contrastive learning. With this approach (DiLo), significant performance is achieved for self-supervised learning on ImageNet classification, and also for object detection on PASCAL VOC and MSCOCO.
+</p>
+
+
+<h2><a id="downloads" href="#top">Downloads</a></h2>
+<ul>
+<li><a href="DiLo_AAAI2021.pdf" target="_blank">Paper [pdf, 8.2M]</a></li>
+<li><a href="https://arxiv.org/pdf/2004.06638" target="_blank">Arxiv</a></li>
+<li><a href="https://github.com/nanxuanzhao/DiLo" target="_blank">Code and Pretrained Models</a></li>
+</ul>
+
+
+
+<h2><a id="bibtex" href="#top">Bibtex</a></h2>
+<div id="bibtexsec">
+@inproceedings{ZhaoAAAI2021, 
+    author = {Nanxuan Zhao and Zhirong Wu and Rynson W.H. Lau and Stephen Lin}, 
+    title = {Distilling Localization for Self-Supervised Representation Learning}, 
+    booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence}, 
+    year = {2021} 
+}
+</div>
+
+
+
+  
+</body></html> 
+ 

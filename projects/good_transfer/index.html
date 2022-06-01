@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" /> 
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<title>What Makes Instance Discrimination Good for Transfer Learning?</title> 
+
+<body> 
+  
+<div id = "head" align="center" style="font-family: Arial, Helvetica, sans-serif;">
+<h1 style = "align:center;  font-size: 180%; margin: 40px 0px 20px 0px;">What Makes Instance Discrimination Good for Transfer Learning?</h1>
+
+<b>International Conference on Learning Representations (ICLR), 2021</b>
+<br>
+<br>
+<br>
+<table>
+<tr>
+<td colspan="5" id="authors">
+<a href="http://nxzhao.com/">Nanxuan Zhao<sup>1*</sup></a> &nbsp;&nbsp;&nbsp;
+<a href="https://www.microsoft.com/en-us/research/people/wuzhiron/">Zhirong Wu<sup>2*</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.cityu.edu.hk/~rynson/">Rynson W.H. Lau<sup>1</sup></a></li> &nbsp;&nbsp;&nbsp;
+<a href="https://www.microsoft.com/en-us/research/people/stevelin/">Stephen Lin<sup>2</sup></a></li> &nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="5" id="affiliation">
+<span class="super"><sup>1</sup>City University of Hong Kong&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<sup>2</sup>Microsoft Research Asia
+</td>
+</tr>
+</table>
+
+
+<a href="img/DIP_vis.pdf"><img src="img/DIP_vis.pdf" alt="Teaser" id="teaser" width = "70%" style = "margin-top: 20px;"></a>
+</div>
+
+
+<table id="navigation"  align="center" style="align:center;font-size: 120%;font-family: Arial, Helvetica, sans-serif;">
+<tr>
+<!--td><a href="#news">News</a></td-->
+<td><a href="#abstract">Abstract</a></td>
+<td><a href="#paper">Downloads</a></td>
+<td><a href="#bibtex">Bibtex</a></td>
+<!--td><a href="#links">Links</a></td-->
+</tr>
+</table>
+</div>
+
+<div id="content">
+
+<h2><a id="abstract" href="#top">Abstract</a></h2>
+<p id="abssec">
+Contrastive visual pretraining based on the instance discrimination pretext task has made significant progress. Notably, recent work on unsupervised pretraining has
+shown to surpass the supervised counterpart for finetuning downstream applications such as object detection and segmentation. It comes as a surprise that image
+annotations would be better left unused for transfer learning. In this work, we investigate the following problems: What makes instance discrimination pretraining
+good for transfer learning? What knowledge is actually learned and transferred from these models? From this understanding of instance discrimination, how can we
+better exploit human annotation labels for pretraining? Our findings are threefold. First, what truly matters for the transfer is low-level and mid-level representations,
+not high-level representations. Second, the intra-category invariance enforced by the traditional supervised model weakens transferability by increasing task
+misalignment. Finally, supervised pretraining can be strengthened by following an exemplar-based approach without explicit constraints among the instances within
+the same category.
+</p>
+
+
+<h2><a id="downloads" href="#top">Downloads</a></h2>
+<ul>
+<li><a href="Good_transfer_ICLR21.pdf" target="_blank">Paper [pdf, 2.1M]</a></li>
+<li><a href="https://arxiv.org/pdf/2006.06606" target="_blank">Arxiv</a></li>
+<li><a href="https://github.com/nanxuanzhao/Good_transfer" target="_blank">Pretrained Models</a></li>
+</ul>
+
+
+
+<h2><a id="bibtex" href="#top">Bibtex</a></h2>
+<div id="bibtexsec">
+@inproceedings{ZhaoICLR2021, 
+    author = {Nanxuan Zhao and Zhirong Wu and Rynson W.H. Lau and Stephen Lin}, 
+    title = {What Makes Instance Discrimination Good for Transfer Learning?}, 
+    booktitle = {ICLR}, 
+    year = {2021} 
+}
+</div>
+
+
+
+  
+</body></html> 
+ 

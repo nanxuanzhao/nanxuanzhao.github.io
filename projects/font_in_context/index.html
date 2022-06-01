@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" /> 
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+<title>Modeling Fonts in Context: Font Prediction on Web Designs</title> 
+
+<body> 
+  
+<div id = "head" align="center" style="font-family: Arial, Helvetica, sans-serif;">
+<h1 style = "align:center;  font-size: 180%; margin: 40px 0px 20px 0px;">Modeling Fonts in Context: Font Prediction on Web Designs</h1>
+
+<b>Computer Graphics Forum (Proc. Pacific Graphics 2018)</b>
+<br>
+<br>
+<br>
+<table>
+<tr>
+<td colspan="5" id="authors">
+<a href="http://nxzhao.com/">Nanxuan Zhao</a> &nbsp;&nbsp;&nbsp;
+<a href="http://www.ying-cao.com/">Ying Cao</a></li> &nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.cityu.edu.hk/~rynson/">Rynson W.H. Lau</a></li> &nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+<tr>
+<td colspan="5" id="affiliation">
+<span class="super">City University of Hong Kong
+</td>
+</tr>
+</table>
+
+
+<a href="img/teaser.png"><img src="img/teaser.png" alt="Teaser" id="teaser" width = "70%" style = "margin-top: 20px;"></a>
+</div>
+
+
+<table id="navigation"  align="center" style="align:center;font-size: 120%;font-family: Arial, Helvetica, sans-serif;">
+<tr>
+<!--td><a href="#news">News</a></td-->
+<td><a href="#abstract">Abstract</a></td>
+<td><a href="#downloads">Downloads</a></td>
+<td><a href="#network">Network</a></td>
+<td><a href="#bibtex">Bibtex</a></td>
+<td><a href="#acks">Acknowledgements</a></td>
+<!--td><a href="#links">Links</a></td-->
+</tr>
+</table>
+</div>
+
+<div id="content">
+
+<h2><a id="abstract" href="#top">Abstract</a></h2>
+<p id="abssec">
+   Web designers often carefully select fonts to fit the context of a web design to make the design look aesthetically pleasing and effective in communication. However, selecting proper fonts for a web design is a tedious and time-consuming task, as each font has many properties, such as font face, color, and size, resulting in a very large search space.	In this paper, we aim to model fonts in context, by studying a novel and challenging problem of predicting fonts that match a given web design. To this end, we propose a novel, multi-task deep neural network to jointly predict font face, color and size for each text element on a web design, by considering multi-scale visual features and semantic tags of the web design. To train our model, we have collected a CTXFont dataset, which consists of 1k professional web designs, with labeled font properties. Experiments show that our model outperforms the baseline methods, achieving promising qualitative and quantitative results on the font selection task. We also demonstrate the usefulness of our method in a font selection task via a user study.
+</p>
+
+
+<h2><a id="downloads" href="#top">Downloads</a></h2>
+<ul>
+<li><a href="Font_in_Context_PG18_zhao.pdf" target="_blank">Paper [pdf, 24M]</a></li>
+<li><a href="Font_in_Context_PG18_zhao_supp.pdf" target="_blank">Supplemental document [pdf, 7M]</a></li>
+<li><a href="https://github.com/nanxuanzhao/CTXFont-dataset" target="_blank">CTXFont-dataset</a></li>
+</ul>
+
+
+<h2><a id="network" href="#top">Network Architecture</a></h2>
+<div align="center"><a href="img/network.png"><img src="img/network.png" alt="Network_architecture" id="network" width = "70%" text-align="center" ></a>
+</div>
+
+
+<h2><a id="bibtex" href="#top">Bibtex</a></h2>
+<div id="bibtexsec">
+@article{ZhaoPG2018, 
+    author = {Nanxuan Zhao and Ying Cao and Rynson W.H. Lau}, 
+    title = {Modeling Fonts in Context: Font Prediction on Web Designs}, 
+    journal = {Computer Graphics Forum (Proc. Pacific Graphics 2018)}, 
+    volume = {37},  
+    issue = {7}, 
+    year = {2018} 
+}
+</div>
+
+
+<h2><a id="acks" href="#top">Acknowledgements</a></h2>
+<p id="ackssec">
+We thank the anonymous reviewers for their insightful comments. We also thank NVIDIA for donation of a Titan X Pascal GPU card.
+</p>
+</div>
+
+  
+</body></html> 
+ 
