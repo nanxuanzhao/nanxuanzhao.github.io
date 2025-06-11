@@ -107,8 +107,7 @@ footer hr {
   text-align: center;
 }
 
-.center h3,
- {
+.center h3 {
   text-align: left;
   color: #e4382c;
 }
@@ -166,7 +165,7 @@ footer hr {
  * For IE 6/7 only
  */
 .row {
-  *zoom: 1;
+  zoom: 1;
 }
 
 .grid-1,
@@ -343,5 +342,96 @@ footer hr {
     text-align: left;
   }
   
+}
+
+/* Tag Filtering System */
+.filter-container {
+  text-align: center;
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.filter-btn {
+  background-color: #fff;
+  border: 2px solid #e4382c;
+  color: #e4382c;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #e4382c;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background-color: #e4382c;
+  color: white;
+  box-shadow: 0 2px 8px rgba(228, 56, 44, 0.3);
+  transform: translateY(-1px);
+}
+
+.paper-tags {
+  margin: 0.5em 0;
+  text-align: left;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.2em 0.6em;
+  margin: 0.1em 0.2em;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  border: 1px solid #ddd;
+}
+
+.tag.ie { background-color: #e3f2fd; color: #1976d2; border-color: #1976d2; }
+.tag.vedit { background-color: #f3e5f5; color: #7b1fa2; border-color: #7b1fa2; }
+.tag.genai { background-color: #e8f5e8; color: #388e3c; border-color: #388e3c; }
+.tag.hci { background-color: #fff3e0; color: #f57c00; border-color: #f57c00; }
+.tag.threed { background-color: #fce4ec; color: #c2185b; border-color: #c2185b; }
+.tag.vector { background-color: #e1f5fe; color: #0288d1; border-color: #0288d1; }
+.tag.gd { background-color: #f1f8e9; color: #689f38; border-color: #689f38; }
+.tag.unsup { background-color: #fff8e1; color: #ffa000; border-color: #ffa000; }
+/* .tag.vector { background-color: #e8eaf6; color: #3f51b5; border-color: #3f51b5; } */
+.tag.color { background-color: #ffebee; color: #d32f2f; border-color: #d32f2f; }
+
+.publication-item {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-bottom: 4em;
+}
+
+.publication-item.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 40em) {
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    width: 80%;
+    max-width: 200px;
+  }
 }
 

@@ -37,7 +37,7 @@
 						<div class="grid-4">
 							
 							<p style=" text-align:left;">
-								I  am a <a href="https://research.adobe.com/news/building-technologies-to-help-people-express-their-creativity/">Research Scientist</a> at <a href="https://research.adobe.com">Adobe Research</a>. I was previously an Assistant Professor in the <a href="https://www.bath.ac.uk/departments/department-of-computer-science/">Department of Computer Science</a>, <a href="https://www.bath.ac.uk/">University of Bath</a>, and fortunate to work as a Postdoctoral Researcher at  <a href="http://mmlab.ie.cuhk.edu.hk">MMLab@The Chinese University of Hong Kong</a>, advised by <a href='http://dahua.site'>Prof. Dahua Lin</a>. I received my Ph.D. degree from the Department of Computer Science, <a href="http://www.cityu.edu.hk/">City University of Hong Kong</a> under the supervision of <a href="http://www.cs.cityu.edu.hk/~rynson/"> Prof. Rynson W.H. Lau</a>. During my Ph.D. study, I was lucky to be a visiting scholar at <a href="https://vcg.seas.harvard.edu">VCG@Harvard University</a> under the supervision of <a href="https://www.seas.harvard.edu/person/hanspeter-pfister"> Prof. Hanspeter Pfister</a>, and closely collaborated with <a href="https://research.adobe.com/person/zoya-bylinskii/"> Zoya Bylinskii </a> from Adobe Research. I was also lucky to work with <a href="https://scholar.google.com/citations?user=c3PYmxUAAAAJ&hl=en"> Steve Lin </a> and <a href="https://scholar.google.com/citations?user=lH4zgcIAAAAJ&hl=en"> Zhirong Wu </a> as an intern at Microsoft Research Asia (MSRA).
+								I  am a Research Scientist at <a href="https://research.adobe.com">Adobe Research</a> (<a href="https://research.adobe.com/news/building-technologies-to-help-people-express-their-creativity/">A cute chat 💬</a>). I was previously an Assistant Professor in the <a href="https://www.bath.ac.uk/departments/department-of-computer-science/">Department of Computer Science</a>, <a href="https://www.bath.ac.uk/">University of Bath</a>, and fortunate to work as a Postdoctoral Researcher at  <a href="http://mmlab.ie.cuhk.edu.hk">MMLab@The Chinese University of Hong Kong</a>, advised by <a href='http://dahua.site'>Prof. Dahua Lin</a>. I received my Ph.D. degree from the Department of Computer Science, <a href="http://www.cityu.edu.hk/">City University of Hong Kong</a> under the supervision of <a href="http://www.cs.cityu.edu.hk/~rynson/"> Prof. Rynson W.H. Lau</a>. During my Ph.D. study, I was lucky to be a visiting scholar at <a href="https://vcg.seas.harvard.edu">VCG@Harvard University</a> under the supervision of <a href="https://www.seas.harvard.edu/person/hanspeter-pfister"> Prof. Hanspeter Pfister</a>, and closely collaborated with <a href="https://research.adobe.com/person/zoya-bylinskii/"> Zoya Bylinskii </a> from Adobe Research. I was also lucky to work with <a href="https://scholar.google.com/citations?user=c3PYmxUAAAAJ&hl=en"> Steve Lin </a> and <a href="https://scholar.google.com/citations?user=lH4zgcIAAAAJ&hl=en"> Zhirong Wu </a> as an intern at Microsoft Research Asia (MSRA).
 								<br>
 								<br>
 								My research lies in the areas of computer graphics, computer vision/machine learning, and human-computer interaction.
@@ -55,6 +55,30 @@
 			
 			<br>
 			<br>
+			<!-- Service -->
+			<section class="center">
+				<div style="width: 100%; height: 20px; border-bottom: 1px solid #ccc; text-align: center">
+				<span style=" font-size: 1.8em; font-family: 'Lato', sans-serif; background-color: #FFF; padding: 0 10px;">
+					<strong>Selected Service</strong>
+				</span>
+				</div>
+				<br>
+				<br>
+				<div class="container">
+					<ul style="text-align: left; list-style-type: disc; padding-left: 20px;">
+						<li>PG 2026 Poster Chair</li>
+						<li>3DV 2026 Area Chair</li>
+						<li>CG&A Associate Editor</li>
+						<li>SIGGRAPH 2025 Paper Committee (AC)</li>
+						<li>SIGGRAPH Asia 2024 Couse Committee</li>
+						<li>SIGGRAPH 2024 Paper Committee (AC)</li>
+						<li>SIGGRAPH Asia 2023 Paper Committee (AC)</li>
+					</ul>
+				</div>
+			</section>
+			
+			<br>
+			<br>
 				<!-- Spotlight -->
 				<section class="spotlight">
 					<div style="width: 100%; height: 20px; border-bottom: 1px solid #ccc; text-align: center">
@@ -62,14 +86,26 @@
 						<strong>Selected Publications</strong>
 					</span>
 					</div>
+					
+					<!-- Filter Interface -->
+					<div class="filter-container">
+						<h4 style="margin: 0 0 1em 0; color: #333;">Filter by Research Area (select multiple):</h4>
+						<div class="filter-buttons">
+							<button class="filter-btn active" data-filter="all">All Papers</button>
+							<button class="filter-btn" data-filter="ie">Image Editing</button>
+							<button class="filter-btn" data-filter="vedit">Video Editing</button>
+							<button class="filter-btn" data-filter="hci">HCI</button>
+							<button class="filter-btn" data-filter="genai">GenAI</button>
+							<button class="filter-btn" data-filter="threed">NeRF/GS/3D</button>
+							<button class="filter-btn" data-filter="vector">Vector Graphics</button>
+							<button class="filter-btn" data-filter="color">Color/Style</button>
+							<button class="filter-btn" data-filter="gd">Graphic Design</button>
+							<button class="filter-btn" data-filter="unsup">Unsupervised Learning</button>
+						</div>
+					</div>
 
 
-
-
-
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="genai threed ie">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/sig25_3dfixup.gif" style="display: inline-block; vertical-align: middle;">
@@ -78,17 +114,18 @@
 								<h3>3D-Fixup: Advancing Photo Editing with 3D Priors</h3>
 								<p>Yen-Chi Cheng, Krishna Kumar Singh, Jae Shin Yoon, Alex Schwing, Liangyan Gui, Matheus Gadelha, Paul Guerrero, <strong>Nanxuan Zhao</strong></p>
 								<p><i>Siggraph 2025</i></p>
+								<div class="paper-tags">
+									<span class="tag genai">GenAI</span>
+									<span class="tag threed">NeRF/GS/3Ds</span>
+									<span class="tag ie">Image Editing</span>
+								</div>
 								<br>
 								<a href="https://3dfixup.github.io/">Project</a>
 								<a href="https://arxiv.org/abs/2505.10566">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="vector genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/sig25_svgstyle.png" style="display: inline-block; vertical-align: middle;">
@@ -97,17 +134,17 @@
 								<h3>Style Customization of Text-to-Vector Generation with Image Diffusion Priors</h3>
 								<p>Peiying Zhang, <strong>Nanxuan Zhao</strong>, Jing Liao</p>
 								<p><i>Siggraph 2025</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://customsvg.github.io/">Project</a>
 								<a href="https://arxiv.org/abs/2505.10558">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="vedit genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/motionbridge.gif" style="display: inline-block; vertical-align: middle;">
@@ -115,17 +152,17 @@
 							<div class="grid-4">
 								<h3>MotionBridge: Dynamic Video Inbetweening with Flexible Controls</h3>
 								<p>Maham Tanveer, Yang Zhou, Simon Niklaus, Ali Mahdavi Amiri, Hao Zhang, Krishna Kumar Singh, <strong>Nanxuan Zhao</strong></p>
+								<div class="paper-tags">
+									<span class="tag vedit">Video Editing</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://motionbridge.github.io/">Project</a>
 								<a href="https://arxiv.org/abs/2412.13190">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="ie genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/cvpr25_UniReal.gif" style="display: inline-block; vertical-align: middle;">
@@ -134,17 +171,17 @@
 								<h3>UniReal: Universal Image Generation and Editing via Learning Real-world Dynamics</h3>
 								<p>Xi Chen, Zhifei Zhang, He Zhang, Yuqian Zhou, Soo Ye Kim, Qing Liu, Yijun Li, Jianming Zhang, <strong>Nanxuan Zhao</strong>, Yilin Wang, Hui Ding, Zhe Lin, Hengshuang Zhao</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2025 <span style="color:red">(Highlight)</span></i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://xavierchen34.github.io/UniReal-Page/">Project</a>
 								<a href="https://arxiv.org/abs/2412.07774">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="ie threed">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/cvpr25_relight.gif" style="display: inline-block; vertical-align: middle;">
@@ -153,17 +190,17 @@
 								<h3>Comprehensive Relighting: Generalizable and Consistent Monocular Human Relighting and Harmonization</h3>
 								<p>Junying Wang, Jingyuan Liu, Xin Sun, Krishna Kumar Singh, Zhixin Shu, He Zhang, Jimei Yang, <strong>Nanxuan Zhao</strong>, Tuanfeng Y. Wang, Simon S. Chen, Ulrich Neumann, Jae Shin Yoon</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2025</i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+									<span class="tag threed">NeRF/GS/3D</span>
+								</div>
 								<br>
 								<a href="https://junyingw.github.io/paper/relighting/">Project</a>
 								<a href="https://arxiv.org/abs/2504.03011">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="ie genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/groupdiff_eccv24.png" style="display: inline-block; vertical-align: middle;">
@@ -172,16 +209,16 @@
 								<h3>GroupDiff: Diffusion-based Group Portrait Editing</h3>
 								<p>Yuming Jiang, <strong>Nanxuan Zhao</strong><sup>#</sup>, Qing Liu, Krishna kumar Singh, Shuai Yang, Chen Change Loy, Ziwei Liu</p>
 								<p><i>European Conference on Computer Vision (ECCV), 2024</i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2409.14379">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="ie genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/swapanything_eccv24.png" style="display: inline-block; vertical-align: middle;">
@@ -190,6 +227,10 @@
 								<h3>SwapAnything: Enabling Arbitrary Object Swapping in Personalized Image Editing</h3>
 								<p>Jing Gu, <strong>Nanxuan Zhao</strong>, Wei Xiong, Qing Liu, Zhifei Zhang, He Zhang, Jianming Zhang, HyunJoon Jung, Yilin Wang, Xin Eric Wang</p>
 								<p><i>European Conference on Computer Vision (ECCV), 2024</i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://swap-anything.github.io/">Project</a>
 								<a href="https://arxiv.org/abs/2404.05717">arXiv</a>
@@ -197,9 +238,7 @@
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="threed">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/gslrm_eccv2024.gif" style="display: inline-block; vertical-align: middle;">
@@ -208,15 +247,16 @@
 								<h3>GS-LRM: Large Reconstruction Model for 3D Gaussian Splatting</h3>
 								<p>Kai Zhang, Sai Bi, Hao Tan, Yuanbo Xiangli, <strong>Nanxuan Zhao</strong>, Kalyan Sunkavalli, Zexiang Xu</p>
 								<p><i>European Conference on Computer Vision (ECCV), 2024</i></p>
+								<div class="paper-tags">
+									<span class="tag threed">NeRF/GS/3D</span>
+								</div>
 								<br>
 								<a href="https://sai-bi.github.io/project/gs-lrm/">Project</a>
 								<a href="https://arxiv.org/abs/2404.19702">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="vector genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/t2v_sig24.png" style="display: inline-block; vertical-align: middle;">
@@ -225,15 +265,17 @@
 								<h3>Text-to-vector Generation With Neural Path Representation</h3>
 								<p>Peiying Zhang, <strong>Nanxuan Zhao</strong>, Jing Liao</p>
 								<p><i>ACM Transactions on Graphics (Proc. SIGGRAPH 2024)</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://intchous.github.io/T2V-NPR/">Project</a>
 								<a href="https://arxiv.org/abs/2405.10317">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="ie genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/LuoEtAl-IntrinsicDiffusion-SIGGRAPH2024-thumbnail.png" style="display: inline-block; vertical-align: middle;">
@@ -242,14 +284,16 @@
 								<h3>IntrinsicDiffusion: Joint Intrinsic Layers From Latent Diffusion Models</h3>
 								<p>Jundan Luo, Duygu Ceylan, Jae Shin Yoon, <strong>Nanxuan Zhao</strong>, Julien Philip, Anna Frühstück, Wenbin Li, Christian Richardt, Tuanfeng Wang</p>
 								<p><i>Siggraph 2024</i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://intrinsicdiffusion.github.io/">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="vector genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/nivel_cvpr24.png" style="display: inline-block; vertical-align: middle;">
@@ -258,18 +302,17 @@
 								<h3>NIVeL: Neural Implicit Vector Layers for Text-to-Vector Generation</h3>
 								<p>Vikas Thamizharasan, Difan Liu, Matthew Fisher, <strong>Nanxuan Zhao</strong>, Evangelos Kalogerakis, Michal Lukáč</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2024</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://vikastmz.github.io/NIVeL/">Project</a>
 								<a href="https://arxiv.org/abs/2405.15217">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<div class="container">
+					<div class="container publication-item" data-tags="vector genai gd">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/layout_cvpr24.png" style="display: inline-block; vertical-align: middle;">
@@ -278,14 +321,17 @@
 								<h3>Visual Layout Composer: Image-Vector Dual Diffusion Model for Design Layout Generation</h3>
 								<p>Mohammad Amin Shabani, Zhaowen Wang, Difan Liu, <strong>Nanxuan Zhao</strong>, Jimei Yang, Yasutaka Furukawa</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2024</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag genai">GenAI</span>
+									<span class="tag gd">Graphic Design</span>
+								</div>
 								<br>
 								<a href="https://aminshabani.github.io/visual_layout_composer/index.html">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="ie genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/diff_plugin_cvpr24.png" style="display: inline-block; vertical-align: middle;">
@@ -294,15 +340,17 @@
 								<h3>Diff-Plugin: Revitalizing Details for Diffusion-based Low-level Tasks</h3>
 								<p>Yuhao Liu, Zhanghan Ke, Fang Liu, <strong>Nanxuan Zhao</strong>, Rynson W.H. Lau</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2024</i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://yuhaoliu7456.github.io/Diff-Plugin/">Project</a>
 								<a href="https://arxiv.org/abs/2403.00644">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="hci">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/chi2024.png" style="display: inline-block; vertical-align: middle;">
@@ -311,15 +359,16 @@
 								<h3>Personalizing Products with Stylized Head Portraits for Self-Expression</h3>
 								<p>Yang Shi, Yechun Peng, Shengqi Dang, <strong>Nanxuan Zhao</strong>, Nan Cao</p>
 								<p><i>ACM Conference on Human Factors in Computing Systems (CHI), 2024</i></p>
+								<div class="paper-tags">
+									<span class="tag hci">HCI</span>
+								</div>
 								<br>
 								<a href="https://dl.acm.org/doi/10.1145/3613904.3642391">Paper</a>
 								<a href="https://www.youtube.com/watch?v=CeHqbmzFY9U">Video</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="ie genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/iclr23.png" style="display: inline-block; vertical-align: middle;">
@@ -328,14 +377,16 @@
 								<h3>Localizing and Editing Knowledge in Text-to-Image Generative Models</h3>
 								<p>Samyadeep Basu, <strong>Nanxuan Zhao</strong>, Vlad Morariu, Soheil Feizi, Varun Manjunatha</p>
 								<p><i>International Conference on Learning Representations (ICLR) 2023</i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2310.13730">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="ie genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/photoswap.png" style="display: inline-block; vertical-align: middle;">
@@ -344,15 +395,17 @@
 								<h3>PHOTOSWAP: Personalized Subject Swapping in Images</h3>
 								<p>Jing Gu, Yilin Wang, <strong>Nanxuan Zhao</strong>, Tsu-Jui Fu, Wei Xiong, Qing Liu, Zhifei Zhang, He Zhang, Jianming Zhang, HyunJoon Jung, Xin Eric Wang</p>
 								<p><i>Conference on Neural Information Processing Systems (NeurIPS) 2023</i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2305.18286">arXiv</a>
 								<a href="https://photoswap.github.io/">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="vector genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/text2vector.png" style="display: inline-block; vertical-align: middle;">
@@ -361,15 +414,17 @@
 								<h3>Text-Guided Vector Graphics Customization</h3>
 								<p>Peiying Zhang, <strong>Nanxuan Zhao</strong>, Jing Liao</p>
 								<p><i>SIGGRAPH Asia 2023</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag genai">GenAI</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2309.12302">arXiv</a>
 								<a href="https://intchous.github.io/SVGCustomization/">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="vector genai">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/clipart2.png" style="display: inline-block; vertical-align: middle;">
@@ -378,15 +433,17 @@
 								<h3>Bring Clipart to Life</h3>
 								<p><strong>Nanxuan Zhao</strong>, Shengqi Dang, Hexun Lin, Yang Shi, Nan Cao</p>
 								<p><i>International Conference on Computer Vision (ICCV), 2023</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag ie">Image Editing</span>
+								</div>
 								<br>
 								<a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Zhao_Bring_Clipart_to_Life_ICCV_2023_paper.pdf">PDF</a>
 								<a href=#>Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="threed">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/AssetField.gif" style="display: inline-block; vertical-align: middle;">
@@ -395,15 +452,16 @@
 								<h3>AssetField: Assets Mining and Reconfiguration in Ground Feature Plane Representation</h3>
 								<p>Yuanbo Xiangli, Linning Xu, Xingang Pan, <strong>Nanxuan Zhao</strong>, Bo Dai, Dahua Lin</p>
 								<p><i>International Conference on Computer Vision (ICCV), 2023</i></p>
+								<div class="paper-tags">
+									<span class="tag threed">NeRF/GS/3D</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2303.13953">arXiv</a>
 								<a href="https://city-super.github.io/assetfield/">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="color ie hci gd">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/LangRecol.png" style="display: inline-block; vertical-align: middle;">
@@ -412,15 +470,19 @@
 								<h3>Language-based Photo Color Adjustment for Graphic Designs</h3>
 								<p>Zhenwei Wang<sup>*</sup>, <strong>Nanxuan Zhao</strong><sup>*</sup>, Gerhard Hancke, Rynson W.H. Lau</p>
 								<p><i>ACM Transactions on Graphics (Proc. SIGGRAPH 2023)</i></p>
+								<div class="paper-tags">
+									<span class="tag color">Color/Style</span>
+									<span class="tag ie">Image Editing</span>
+									<span class="tag hci">HCI</span>
+									<span class="tag gd">Graphic Design</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2308.03059">arXiv</a>
 								<a href="https://zhenwwang.github.io/langrecol/">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="ie">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/FashionTex.png" style="display: inline-block; vertical-align: middle;">
@@ -429,14 +491,15 @@
 								<h3>FashionTex: Controllable Virtual Try-on with Text and Texture</h3>
 								<p>Anran Lin, <strong>Nanxuan Zhao</strong>, Shuliang Ning, Yuda Qiu, Baoyuan Wang, Xiaoguang Han</p>
 								<p><i>SIGGRAPH 2023</i></p>
+								<div class="paper-tags">
+									<span class="tag ie">Image Editing</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2305.04451">arXiv</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="color">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/neural_preset.gif" style="display: inline-block; vertical-align: middle;">
@@ -445,6 +508,9 @@
 								<h3>Neural Preset for Color Style Transfer</h3>
 								<p>Zhanghan Ke, Yuhao Liu, Lei Zhu, <strong>Nanxuan Zhao</strong>, Rynson W.H. Lau</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2023</i></p>
+								<div class="paper-tags">
+									<span class="tag color">Color/Style</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2303.13511">arXiv</a>
 								<a href="https://zhkkke.github.io/NeuralPreset/#/">Project</a>
@@ -454,9 +520,7 @@
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="threed">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/gridNerf.gif" style="display: inline-block; vertical-align: middle;">
@@ -465,15 +529,16 @@
 								<h3>Grid-guided Neural Radiance Fields for Large Urban Scenes</h3>
 								<p>Linning Xu, Yuanbo Xiangli, Sida Peng, Xingang Pan, <strong>Nanxuan Zhao</strong>, Christian Theobalt, Bo Dai, Dahua Lin</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2023</i></p>
+								<div class="paper-tags">
+									<span class="tag threed">NeRF/GS/3D</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2303.14001">arXiv</a>
 								<a href="https://city-super.github.io/gridnerf/">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="color ie">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/Unicolor_siga22.png" style="display: inline-block; vertical-align: middle;">
@@ -482,6 +547,10 @@
 								<h3>UniColor: A Unified Framework for Multi-Modal Colorization with Transformer</h3>
 								<p>Zhitong Huang<sup>*</sup>, <strong>Nanxuan Zhao</strong><sup>*</sup>, Jing Liao</p>
 								<p><i>ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2022)</i></p>
+								<div class="paper-tags">
+									<span class="tag color">Color/Style</span>
+									<span class="tag ie">Image Editing</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2209.11223">arXiv</a>
 								<a href="https://luckyhzt.github.io/unicolor">Project</a>
@@ -489,9 +558,7 @@
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="vector unsup color">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/Pixelization_siga22.png" style="display: inline-block; vertical-align: middle;">
@@ -500,15 +567,18 @@
 								<h3>Make Your Own Sprites: Aliasing-Aware and Cell-Controllable Pixelization</h3>
 								<p>Zongwei Wu, Liangyu Chai, <strong>Nanxuan Zhao</strong>, Bailin Deng, Yongtuo Liu, Qiang Wen, Junle Wang, and Shengfeng He</p>
 								<p><i>ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2022)</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag unsup">Unsupervised Learning</span>
+									<span class="tag color">Color/Style</span>
+								</div>
 								<br>
 								<a href="./projects/pixelization/pixelization_siga22.pdf">Paper</a>
 								<a href="https://github.com/WuZongWei6/Pixelization">Code</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="threed">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/CityNerf_eccv22.gif" style="display: inline-block; vertical-align: middle;">
@@ -517,6 +587,9 @@
 								<h3>BungeeNeRF: Progressive Neural Radiance Field for Extreme Multi-scale Scene Rendering</h3>
 								<p>Yuanbo Xiangli<sup>*</sup>, Linning Xu<sup>*</sup>, Xingang Pan, <strong>Nanxuan Zhao</strong>, Anyi Rao, Christian Theobalt, Bo Dai, and Dahua Lin</p>
 								<p><i>European Conference on Computer Vision (ECCV), 2022</i></p>
+								<div class="paper-tags">
+									<span class="tag threed">NeRF/GS/3D</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2112.05504">arxiv</a>
 								<a href="https://city-super.github.io/citynerf/">Project</a>
@@ -524,9 +597,7 @@
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-						<div class="container">
+											<div class="container publication-item" data-tags="unsup">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/Transrank_cvpr22.png" style="display: inline-block; vertical-align: middle;">
@@ -535,15 +606,16 @@
 								<h3>TransRank: Self-supervised Video Representation Learning via Ranking-based Transformation Recognition</h3>
 								<p>Haodong Duan, <strong>Nanxuan Zhao</strong><sup>#</sup>, Kai Chen, Dahua Lin</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2022 <span style="color:red">(Oral)</span></i></p>
+								<div class="paper-tags">
+									<span class="tag unsup">Unsupervised Learning</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/abs/2205.02028">arXiv</a>
 								<a href="https://github.com/kennymckormick/TransRank">Code</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="vector threed">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/BlockPlanner_iccv21.png" style="display: inline-block; vertical-align: middle;">
@@ -552,15 +624,17 @@
 								<h3>BlockPlanner: City Block Generation with Vectorized Graph Representation</h3>
 								<p>Linning Xu<sup>*</sup>, Yuanbo Xiangli<sup>*</sup>, Anyi Rao, <strong>Nanxuan Zhao</strong>, Bo Dai, Ziwei Liu, Dahua Lin</p>
 								<p><i>International Conference on Computer Vision (ICCV), 2021</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag threed">NeRF/GS/3D</span>
+								</div>
 								<br>
 								<a href="./projects/BlockPlanner/BlockPlanner_ICCV_2021_paper.pdf">Paper</a>
 								<a href="./projects/BlockPlanner/BlockPlanner_ICCV_2021_supplemental.pdf">Supp</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="color ie hci gd">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/GD_recolor_TOG.png" style="display: inline-block; vertical-align: middle;">
@@ -569,15 +643,19 @@
 								<h3>Selective Region-based Photo Color Adjustment for Graphic Designs</h3>
 								<p><strong>Nanxuan Zhao</strong>, Quanlong Zheng, Jing Liao, Ying Cao, Hanspeter Pfister, Rynson W. H. Lau</p>
 								<p><i>ACM Transactions on Graphics (presented at SIGGRAPH 2021 and VIS 2021)</i></p>
+								<div class="paper-tags">
+									<span class="tag color">Color/Style</span>
+									<span class="tag ie">Image Editing</span>
+									<span class="tag hci">HCI</span>
+									<span class="tag gd">Graphic Design</span>
+								</div>
 								<br>
 								<a href="./projects/GD_recolor/Graphic_Design_Recolor_TOG21_zhao.pdf">PDF</a>
 								<a href="http://nxzhao.com/projects/GD_recolor">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="unsup">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/understand_ID.png" style="display: inline-block; vertical-align: middle;">
@@ -586,15 +664,16 @@
 								<h3>What Makes Instance Discrimination Good for Transfer Learning?</h3>
 								<p>Nanxuan Zhao<sup>*</sup>, Zhirong Wu<sup>*</sup>, Rynson W. H. Lau, Stephen Lin</p>
 								<p><i>International Conference on Learning Representations (ICLR), 2021</i></p>
+								<div class="paper-tags">
+									<span class="tag unsup">Unsupervised Learning</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/pdf/2006.06606">arXiv</a>
 								<a href="http://nxzhao.com/projects/good_transfer">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="unsup">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/localization1.png" style="display: inline-block; vertical-align: middle;">
@@ -603,15 +682,16 @@
 								<h3>Distilling Localization for Self-Supervised Representation Learning</h3>
 								<p>Nanxuan Zhao<sup>*</sup>, Zhirong Wu<sup>*</sup>, Rynson W. H. Lau, Stephen Lin</p>
 								<p><i>AAAI Conference on Artificial Intelligence (AAAI), 2021</i></p>
+								<div class="paper-tags">
+									<span class="tag unsup">Unsupervised Learning</span>
+								</div>
 								<br>
 								<a href="https://arxiv.org/pdf/2004.06638">arXiv</a>
 								<a href="http://nxzhao.com/projects/DiLo_localization">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="hci">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/multi-duration.png" style="display: inline-block; vertical-align: middle;">
@@ -620,15 +700,16 @@
 								<h3>How Much Time Do You Have? Modeling Multi-duration Saliency</h3>
 								<p>Camilo Fosco<sup>*</sup>, Anelise Newman<sup>*</sup>, Pat Sukhum, Yun Bin Zhang, <strong>Nanxuan Zhao</strong>, Aude Oliva, Zoya Bylinskii</p>
 								<p><i>Computer Vision and Pattern Recognition (CVPR), 2020</i></p>
+								<div class="paper-tags">
+									<span class="tag hci">HCI</span>
+								</div>
 								<br>
 								<a href="./projects/multi-duration/CVPR20_multi-duration.pdf">PDF</a>
 								<a href="http://multiduration-saliency.csail.mit.edu/#Paper">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="hci gd">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/VIF.jpg" style="display: inline-block; vertical-align: middle;">
@@ -637,6 +718,10 @@
 								<h3>Exploring Visual Information Flows in Infographics</h3>
 								<p>Min Lu, Chufeng Wang, Joel Lanir, <strong>Nanxuan Zhao</strong>, Hanspeter Pfister, Daniel Cohen-Or, Hui Huang</p>
 								<p><i>ACM Conference on Human Factors in Computing Systems (CHI), 2020</i></p>
+								<div class="paper-tags">
+									<span class="tag hci">HCI</span>
+									<span class="tag gd">Graphic Design</span>
+								</div>
 								<br>
 								<a href="./projects/VIF/CHI20_VIF.pdf">PDF</a>
 								<a href="https://deardeer.github.io/pub/CHI20_VIF.mp4">Video</a>
@@ -646,7 +731,7 @@
 					</div>
                     <br>
 					<br>
-					<div class="container">
+					                    					<div class="container publication-item" data-tags="vector gd hci">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/iconate_2020.png" style="display: inline-block; vertical-align: middle;">
@@ -655,6 +740,11 @@
 								<h3>ICONATE: Automatic Compound Icon Generation and Ideation</h3>
 								<p><strong>Nanxuan Zhao</strong>, Nam Wook Kim, Laura Mariah Herman, Hanspeter Pfister, Rynson W.H. Lau, Jose Echevarria, Zoya Bylinskii</p>
 								<p><i>ACM Conference on Human Factors in Computing Systems (CHI), 2020</i></p>
+								<div class="paper-tags">
+									<span class="tag vector">Vector Graphics</span>
+									<span class="tag gd">Graphic Design</span>
+									<span class="tag hci">HCI</span>
+								</div>
 								<br>
 								<a href="./projects/ICONATE/CHI2020_ICONATE.pdf">PDF</a>
 								<a href="http://nxzhao.com/projects/ICONATE">Project</a>
@@ -663,7 +753,7 @@
 					</div>
 					<br>
 					<br>
-                    <div class="container">
+                    <div class="container publication-item" data-tags="gd">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/font_in_context_2018.png" style="display: inline-block; vertical-align: middle;">
@@ -672,15 +762,16 @@
 								<h3>Modeling Fonts in Context: Font Prediction on Web Designs</h3>
 								<p><strong>Nanxuan Zhao</strong>, Ying Cao, Rynson W.H. Lau</p>
 								<p><i>Computer Graphics Forum (Proc. Pacific Graphics 2018)</i></p>
+								<div class="paper-tags">
+									<span class="tag gd">Graphic Design</span>
+								</div>
 								<br>
 								<a href="./projects/font_in_context/Font_in_Context_PG18_zhao.pdf">PDF</a>
 								<a href="http://nxzhao.com/projects/font_in_context">Project</a>
 							</div>
 						</div>
 					</div>
-					<br>
-					<br>
-					<div class="container">
+										<div class="container publication-item" data-tags="gd">
 						<div class="row">
 							<div class="grid-2" style="height:200px; line-height:200px; ">
 								<img src="img/design_personality_2018.png" style="display: inline-block; vertical-align: middle;">
@@ -689,6 +780,9 @@
 								<h3>What Characterizes Personalities of Graphic Designs?</h3>
 								<p><strong>Nanxuan Zhao</strong>, Ying Cao, Rynson W.H. Lau</p>
 								<p><i>ACM Transactions on Graphics (Proc. SIGGRAPH 2018)</i></p>
+								<div class="paper-tags">
+									<span class="tag gd">Graphic Design</span>
+								</div>
 								<br>
 								<a href="./projects/design_personality/Graphic_Design_Personality_SIG18_zhao.pdf">PDF</a>
 								<a href="http://nxzhao.com/projects/design_personality">Project</a>
@@ -721,5 +815,108 @@
 		</footer>
 		
 	</div><!-- End Container -->
+	
+	<script>
+		// Tag filtering functionality
+		document.addEventListener('DOMContentLoaded', function() {
+			const filterButtons = document.querySelectorAll('.filter-btn');
+			const publications = document.querySelectorAll('.publication-item');
+			const allButton = document.querySelector('.filter-btn[data-filter="all"]');
+			
+			function updatePublications() {
+				// Get all active filter values (excluding 'all')
+				const activeFilters = Array.from(filterButtons)
+					.filter(btn => btn.classList.contains('active') && btn.getAttribute('data-filter') !== 'all')
+					.map(btn => btn.getAttribute('data-filter'));
+				
+				// If no filters are active or 'all' is active, show all publications
+				if (activeFilters.length === 0 || allButton.classList.contains('active')) {
+					publications.forEach(publication => {
+						publication.classList.remove('hidden');
+					});
+					return;
+				}
+				
+				// Filter publications based on intersection of selected tags
+				publications.forEach(publication => {
+					const publicationTags = publication.getAttribute('data-tags') || '';
+					
+					// Check if publication contains ALL selected filter tags
+					const hasAllTags = activeFilters.every(filter => {
+						// Handle special mappings for tag names
+						const tagMappings = {
+							'ie': 'ie',
+							've': 've', 
+							'genai': 'genai',
+							'hci': 'hci',
+							'threed': 'threed',
+							'vector': 'vector',
+							'gd': 'gd',
+							'color': 'color',
+							'unsup': 'unsup'
+						};
+						
+						return publicationTags.includes(tagMappings[filter] || filter);
+					});
+					
+					if (hasAllTags) {
+						publication.classList.remove('hidden');
+					} else {
+						publication.classList.add('hidden');
+					}
+				});
+			}
+			
+			filterButtons.forEach(button => {
+				button.addEventListener('click', function() {
+					const filterValue = this.getAttribute('data-filter');
+					
+					if (filterValue === 'all') {
+						// If 'All Papers' is clicked, deactivate all other buttons and activate only 'all'
+						filterButtons.forEach(btn => btn.classList.remove('active'));
+						this.classList.add('active');
+					} else {
+						// If any other button is clicked, deactivate 'All Papers' and toggle this button
+						allButton.classList.remove('active');
+						this.classList.toggle('active');
+						
+						// If no buttons are active after toggle, activate 'All Papers'
+						const hasActiveFilters = Array.from(filterButtons)
+							.some(btn => btn.classList.contains('active') && btn.getAttribute('data-filter') !== 'all');
+						
+						if (!hasActiveFilters) {
+							allButton.classList.add('active');
+						}
+					}
+					
+					updatePublications();
+					
+					// Smooth scroll to filtered content if filters are active
+					const hasActiveNonAllFilters = Array.from(filterButtons)
+						.some(btn => btn.classList.contains('active') && btn.getAttribute('data-filter') !== 'all');
+					
+					if (hasActiveNonAllFilters) {
+						const spotlight = document.querySelector('.spotlight');
+						if (spotlight) {
+							spotlight.scrollIntoView({ behavior: 'smooth', block: 'start' });
+						}
+					}
+				});
+			});
+			
+			// Add hover effects for tags
+			const tags = document.querySelectorAll('.tag');
+			tags.forEach(tag => {
+				tag.addEventListener('mouseenter', function() {
+					this.style.transform = 'scale(1.05)';
+					this.style.transition = 'transform 0.2s ease';
+				});
+				
+				tag.addEventListener('mouseleave', function() {
+					this.style.transform = 'scale(1)';
+				});
+			});
+		});
+	</script>
 </body>
 </html>
